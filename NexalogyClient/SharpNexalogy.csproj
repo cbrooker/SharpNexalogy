@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\FindResults.cs" />
+    <Compile Include="Model\LexiconResults.cs" />
     <Compile Include="Model\Project.cs" />
     <Compile Include="NexalogyClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

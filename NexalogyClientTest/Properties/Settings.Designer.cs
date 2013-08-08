@@ -25,7 +25,7 @@ namespace NexalogyClientTest.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("01f6f3f9100185d879aa1c72a8ec840351f17468a6ba6")]
         public string ApiKey {
             get {
                 return ((string)(this["ApiKey"]));

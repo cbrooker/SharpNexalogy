@@ -20,7 +20,7 @@ namespace NexalogyClientTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var client = new NexalogyClient(Apikey);
+            var client = new NexalogyClient(_apikey);
             var result = client.ProjectGetList();
 
             textBox1.Text = "Project list" + Environment.NewLine + Environment.NewLine;
@@ -38,7 +38,7 @@ namespace NexalogyClientTest
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var client = new NexalogyClient(Apikey);
+            var client = new NexalogyClient(_apikey);
             var result = client.ProjectGet(projectId.Text);
 
             textBox1.Text = JsonConvert.SerializeObject(result, Formatting.Indented);
@@ -47,7 +47,7 @@ namespace NexalogyClientTest
 
         private void button4_Click(object sender, EventArgs e)
         {
-            var client = new NexalogyClient(Apikey);
+            var client = new NexalogyClient(_apikey);
 
             var proj = new SharpNexalogy.Model.Project
                            {
@@ -62,6 +62,23 @@ namespace NexalogyClientTest
         private void button2_Click(object sender, EventArgs e)
         {
             textBox1.Text = string.Empty;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var client = new NexalogyClient(_apikey);
+
+            var result = client.ProjectFind();
+            textBox1.Text = JsonConvert.SerializeObject(result, Formatting.Indented);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var client = new NexalogyClient(_apikey);
+
+            var result = client.LexiconGenerate(lexgenprojId.Text);
+            textBox1.Text = JsonConvert.SerializeObject(result, Formatting.Indented);
+            
         }
 
         
