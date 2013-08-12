@@ -43,14 +43,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\AutoCaptureRunResults.cs" />
+    <Compile Include="Model\AutoCaptureStatusResults.cs" />
+    <Compile Include="Model\JobStatusResults.cs" />
     <Compile Include="Model\FindResults.cs" />
+    <Compile Include="Model\ImportSearchResults.cs" />
+    <Compile Include="Model\Job.cs" />
     <Compile Include="Model\LexiconResults.cs" />
+    <Compile Include="Model\NexalogyUser.cs" />
+    <Compile Include="Model\PostData.cs" />
     <Compile Include="Model\Project.cs" />
+    <Compile Include="Model\ProjectResponse.cs" />
+    <Compile Include="Model\ReportsGenerateResults.cs" />
+    <Compile Include="Model\Search.cs" />
+    <Compile Include="Model\SearchCreateResults.cs" />
+    <Compile Include="Model\SearchGetListResults.cs" />
+    <Compile Include="Model\SearchGetResults.cs" />
     <Compile Include="NexalogyClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ImportTest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

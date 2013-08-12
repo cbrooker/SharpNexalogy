@@ -51,7 +51,7 @@ namespace NexalogyClientTest
 
             var proj = new SharpNexalogy.Model.Project
                            {
-                               name = "ApiMyTest", 
+                               name = projectname.Text, 
                                language = "en"
                            };
 

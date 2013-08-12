@@ -5,7 +5,6 @@ using System.Text;
 
 namespace SharpNexalogy.Model
 {
-  
     public class Project
     {
         public string id { get; set; }
@@ -41,13 +40,5 @@ namespace SharpNexalogy.Model
         public object searchCount { get; set; }
         public string sdi { get; set; }
         public int isAutocaptured { get; set; }
-    }
-
-    public class ProjectsResponse
-    {
-        public List<Project> projects { get; set; }
-        public bool sortDescending { get; set; }
-        public string sort { get; set; }
-        public bool success { get; set; }
     }
 }

@@ -39,6 +39,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.lexgenprojId = new System.Windows.Forms.TextBox();
+            this.projectname = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // apik
@@ -151,11 +152,19 @@
             this.lexgenprojId.Size = new System.Drawing.Size(60, 20);
             this.lexgenprojId.TabIndex = 25;
             // 
+            // projectname
+            // 
+            this.projectname.Location = new System.Drawing.Point(142, 67);
+            this.projectname.Name = "projectname";
+            this.projectname.Size = new System.Drawing.Size(77, 20);
+            this.projectname.TabIndex = 26;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1003, 493);
+            this.Controls.Add(this.projectname);
             this.Controls.Add(this.lexgenprojId);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -188,6 +197,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox lexgenprojId;
+        private System.Windows.Forms.TextBox projectname;
 
     }
 }
